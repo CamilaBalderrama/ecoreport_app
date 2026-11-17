@@ -1,0 +1,37 @@
+name: ecoreport_app
+description: "A new Flutter project."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.14.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+  geolocator: ^13.0.2
+  image_picker: ^1.1.2
+  http: ^1.2.2
+  sqflite: ^2.3.3
+  path: ^1.9.0
+  cupertino_icons: ^1.0.8
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_launcher_icons: ^0.13.1
+  flutter_lints: ^6.0.0
+
+flutter:
+  uses-material-design: true
+
+  # Declaramos tu logo para poder usarlo dentro de la app con Image.asset
+  assets:
+    - assets/logo.png
+
+# Configuración para generar el ícono oficial de la app en Android e iOS
+flutter_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/logo.png"
